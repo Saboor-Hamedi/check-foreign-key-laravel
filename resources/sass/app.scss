@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+body{
+    background-color: rgb(241, 237, 237);
+}
+.highlight{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 1000px;
+    background-color:rgb(255, 255, 255);
+}
+.alert-success{
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+.language-plaintext{
+    padding: 20px;
+}
+.language-plaintext p
+{
+    font-size: 18px;
+    line-height: 3;
+}
+.fx-btn{
+    padding: 10px ;
+}
+textarea{
+    resize: none;
+}
+textarea, input{
+    outline: none;
+}
