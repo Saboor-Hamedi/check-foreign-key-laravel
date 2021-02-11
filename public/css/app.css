@@ -10972,6 +10972,9 @@ body {
 
 .fx-btn {
   padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 textarea {
@@ -10981,6 +10984,28 @@ textarea {
 textarea,
 input {
   outline: none;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover,
+link:active {
+  color: black;
 }
 
 

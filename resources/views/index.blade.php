@@ -9,8 +9,7 @@
                     the improvement and reduce the redundance, this project<br>
                     will help teachers and students to work effortlessly
                 </p>
-                <a href="login" class="btn btn-primary">Login</a>
-                <a href="register" class="btn btn-info">Register</a>
-               
+                <a href="login" class="btn btn-primary link">Login</a>
+                <a href="register" class="btn btn-info link">Register</a>
             </div>
         @endsection

@@ -2,8 +2,7 @@
 @section('title', 'Insert post')
 @section('content')
 <h1>Make Post</h1>
-
-{!! Form::open(['action' => 'App\Http\Controllers\DataController@store', 'method' => 'POST']) !!}
+    {!! Form::open(['action' => 'App\Http\Controllers\DataController@store', 'method' => 'POST']) !!}
     <div class="row">
         <div class="col">
            <div class="form-group">

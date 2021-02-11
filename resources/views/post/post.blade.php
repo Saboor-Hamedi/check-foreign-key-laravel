@@ -16,9 +16,12 @@
                 </div>
                 <div class="fx-btn">
                 <hr>
-                <a href="/insert" type="button" class="btn btn-info">Insert</a>
-                <a href="/post/{{ $item->id }}/edit" type="button" class="btn btn-primary">Edit</a> 
-                <a href="" type="button" class="btn btn-danger">Delete</a> 
+                <a href="/insert" type="button" class="btn btn-info link">Insert</a>
+                <a href="/post/{{ $item->id }}/edit" type="button" class="btn btn-primary link">Edit</a> 
+                    {!! Form::open(['action' => ['App\Http\Controllers\DataController@destroy', $item->id ], 'method' => 'POST', 'class'=> 'pull-right']) !!}
+                        {{ Form::hidden('_method', 'DELETE') }}
+                        {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
+                    {!! Form::close() !!}
             </div>
             </div>
     @endforeach

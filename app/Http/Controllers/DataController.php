@@ -105,6 +105,8 @@ class DataController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = postTable::find($id);
+        $post->delete();
+        return redirect('/post')->with('message', 'Post Deleted');
     }
 }
