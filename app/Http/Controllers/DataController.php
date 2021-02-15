@@ -45,10 +45,15 @@ class DataController extends Controller
         $post = new  postTable;
         $post->title= $request->title;
         $post->content= $request->content;
-        $post->author_id= $request->author_id;
-        $post->save();
-        // return redirect('/post')->with('errors', 'Inserted');
-        return redirect('/post')->with('message', 'Insert successfully');
+       
+        if(!$post->author_id){
+            return redirect('/post')->with('message', 'ID not matched');
+        }else{
+            $post->author_id= $request->author_id;
+            $post->save();
+            return redirect('/post')->with('message', 'Insert successfully');
+        }
+  
     }
 
     /**

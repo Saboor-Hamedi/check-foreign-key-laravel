@@ -11,4 +11,6 @@ class postTable extends Model
     protected $table  = 'post' ;
     protected $primryKey  = 'id';
     public $timestamps   = false;
+
+
 }

@@ -22,11 +22,12 @@
         </div>
     </div>
     <div class="row mt-10">
-        <div class="col">
+        <div class="col"> 
+           
             <div class="form-group">
                 {{Form::textarea('content','', ['id' => 'artical', 'class' => 'form-control', 'placeholder '=> 'Your content here....'])}}
                  @error('content')
-                <p class="text-danger">{{ $message }}</p>
+                     <p class="text-danger">{{ $message }}</p>
                   @enderror
             </div>
         </div>
@@ -34,7 +35,7 @@
   
     <div class="row ">
         <div class="col ">
-        {{ Form::submit('submit', ['class' => 'btn btn-primary']) }}
+        {{ Form::submit('submit', ['class' => 'btn btn-primary link']) }}
         </div>
     </div>
 {!! Form::close() !!}

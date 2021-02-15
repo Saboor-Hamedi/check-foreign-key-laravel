@@ -19,6 +19,8 @@ class CreatePostTablesTable extends Migration
           $table->text('content');
           $table->timestamp('content_time');
           $table->bigInteger('author_id');
+         
+
         });
     }
 
